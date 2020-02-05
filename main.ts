@@ -8,7 +8,6 @@ import Wheel from "./components/Wheel";
 const road: Vehicle[] = [];
 
 const car = new Car(
-    4,
     [
         new Wheel("rubber"),
         new Wheel("rubber"),
@@ -18,7 +17,7 @@ const car = new Car(
     100
 );
 
-const bike = new Bike(2, [new Wheel("plastic"), new Wheel("plastic")], 50);
+const bike = new Bike([new Wheel("plastic"), new Wheel("plastic")], 50);
 
 road.push(car);
 road.push(bike);
