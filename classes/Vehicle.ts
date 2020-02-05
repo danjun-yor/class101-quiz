@@ -1,20 +1,25 @@
-import Wheel from "./Wheel";
+import Wheel from "../components/Wheel";
 
 export default class Vehicle {
-    private numberOfWheels: number; // bigger than -1
-    public wheels: Wheel[];
-    private fuel: number; // 0~100
+    private _numberOfWheels: number; // bigger than -1
+    public _wheels: Wheel[];
+    private _fuel: number; // 0~100
 
     constructor(numberOfWheels: number, wheels: Wheel[], fuel: number) {
-        this.numberOfWheels = numberOfWheels;
-        this.wheels = wheels;
-        this.fuel = fuel;
-    }
-    public getNumberOfWheels() {
-        return this.numberOfWheels;
+        this._numberOfWheels = numberOfWheels;
+        this._wheels = wheels;
+        this._fuel = fuel;
     }
 
-    public getFuel() {
-        return this.fuel;
+    get wheels() {
+        return this._wheels;
+    }
+
+    get numberOfWheels() {
+        return this._numberOfWheels;
+    }
+
+    get fuel() {
+        return this._fuel;
     }
 }
