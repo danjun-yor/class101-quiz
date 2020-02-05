@@ -5,6 +5,7 @@ export default class Bike extends Vehicle {
     public start() {
         this.wheels.forEach(wheel => (wheel.rpm = 8));
     }
+
     public isRoadEmpty(vehicles: Vehicle[]) {
         return vehicles.length === 0;
     }

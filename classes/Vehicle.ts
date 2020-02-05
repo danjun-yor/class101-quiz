@@ -2,7 +2,7 @@ import Wheel from "../components/Wheel";
 
 export default class Vehicle {
     public _wheels: Wheel[];
-    private _fuel: number; // 0~100
+    private _fuel: number;
 
     constructor(wheels: Wheel[], fuel: number) {
         if (wheels.length <= -1) {
